@@ -1,0 +1,22 @@
+[main]
+file_path = "../private/default.xex"
+out_directory_path = "../ppc"
+switch_table_file_path = "mcla_switch_tables.toml"
+
+skip_lr = false
+skip_msr = false
+ctr_as_local = false
+xer_as_local = false
+reserved_as_local = false
+cr_as_local = false
+non_argument_as_local = false
+non_volatile_as_local = false
+
+restgprlr_14_address = 0x823d9210
+savegprlr_14_address = 0x823d91c0
+restfpr_14_address   = 0x823db9ec
+savefpr_14_address   = 0x823db1a0
+restvmx_14_address   = 0x823dd558
+savevmx_14_address   = 0x823dd2c0
+restvmx_64_address   = 0x823dd5ec
+savevmx_64_address   = 0x823dd354

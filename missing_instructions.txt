@@ -1,0 +1,13 @@
+frsqrte
+vsel128
+dcbst
+vcfpuxws128
+vspltish
+vpkuwus128
+vpkuhum128
+vrfip128
+vpkswss128
+vrfip128
+mullhwu
+mulhdu
+eqv
