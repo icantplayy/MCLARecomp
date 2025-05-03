@@ -11,3 +11,12 @@ vrfip128
 mullhwu
 mulhdu
 eqv
+
+// NEW
+
+frsqrte
+vpkuwus128
+vrfip128
+mullhwu
+vpkuwum128
+vpkuhum128
