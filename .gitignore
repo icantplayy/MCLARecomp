@@ -1,3 +1,6 @@
-build
+build/
+ghidra_proj/
+.vscode/
+
 lib/private/*
 lib/ppc/*
