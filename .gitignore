@@ -4,3 +4,5 @@ ghidra_proj/
 
 lib/private/*
 lib/ppc/*
+
+recomp_out.txt

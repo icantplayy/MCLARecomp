@@ -1,0 +1,1 @@
+.\tools\XenonRecomp\out\build\x64-Clang-Debug\XenonAnalyse\XenonAnalyse.exe .\lib\private\default.xex .\lib\config\mcla_switch_tables.toml
