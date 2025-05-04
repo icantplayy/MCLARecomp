@@ -2,4 +2,7 @@ build/
 ghidra_proj/
 .vscode/
 
+.vs/
+out/
+
 recomp_out.txt

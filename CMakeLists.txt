@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 
-set(CMAKE_CXX_STANDARD 20)
-set(BUILD_SHARED_LIBS OFF)
-
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
   cmake_policy(SET CMP0141 NEW)
@@ -12,3 +9,4 @@ endif()
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 add_subdirectory(lib)
+add_subdirectory(mcla)
