@@ -1,0 +1,3 @@
+[submodule "tools/XenonRecomp"]
+	path = tools/XenonRecomp
+	url = https://github.com/icantplayy/XenonRecomp.git
