@@ -9,10 +9,21 @@ set(INCLUDE_DIRECTORIES
 )
 
 add_compile_options(
-    -ferror-limit=0 -Wno-deprecated -O2 -mssse3 -msse4.1 -mavx
+    -fno-strict-aliasing
+    -Wno-switch
+    -Wno-unused-function
+    -Wno-unused-variable
+    -Wno-unused-but-set-variable
+    -Wno-void-pointer-to-int-cast
+    -Wno-int-to-void-pointer-cast
+    -Wno-invalid-offsetof
+    -Wno-null-arithmetic
+    -Wno-null-conversion
+    -Wno-tautological-undefined-compare
 )
 
 set(MCLA_SRC
+    imports.cpp
     main.cpp
 )
 
