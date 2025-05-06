@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.22)
 project("mcla-all")
 
 set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(BUILD_SHARED_LIBS OFF)
 
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
@@ -12,6 +12,8 @@ if (POLICY CMP0141)
 endif()
 
 set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
+add_subdirectory(thirdparty)
 
 add_subdirectory(lib)
 add_subdirectory(mcla)

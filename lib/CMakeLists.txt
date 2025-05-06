@@ -6,7 +6,8 @@ file(GLOB_RECURSE SRCS CMAKE_CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/ppc/*
 
 add_compile_options(
     -Wno-deprecated
-    -O2 -mssse3
+    -O2
+    -mssse3
     -msse4.1
     -mavx
 )

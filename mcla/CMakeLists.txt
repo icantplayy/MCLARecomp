@@ -2,12 +2,6 @@ cmake_minimum_required(VERSION 3.22)
 
 project("mcla_recomp")
 
-set(INCLUDE_DIRECTORIES
-    ${CMAKE_CURRENT_SOURCE_DIR}
-    ${CMAKE_CURRENT_SOURCE_DIR}../lib
-    ${CMAKE_CURRENT_SOURCE_DIR}../tools/XenonRecomp/XenonUtils
-)
-
 add_compile_options(
     -fno-strict-aliasing
     -Wno-switch
@@ -23,11 +17,26 @@ add_compile_options(
 )
 
 set(MCLA_SRC
-    imports.cpp
     main.cpp
+    imports.cpp
+    game_window.cpp
 )
 
 add_executable(mcla ${MCLA_SRC})
-target_include_directories(mcla PUBLIC ${INCLUDE_DIRECTORIES})
-target_link_libraries(mcla PUBLIC libmcla)
+
+target_include_directories(mcla PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+
+target_link_libraries(mcla PUBLIC
+    libmcla
+    SDL3-static
+)
+
+if (WIN32)
+    target_link_libraries(mcla PUBLIC
+        d3d11
+    )
+endif()
+
 target_precompile_headers(mcla PUBLIC stdafx.h)
